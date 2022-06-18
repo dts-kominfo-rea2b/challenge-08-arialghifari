@@ -41,11 +41,11 @@
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
         let li = document.createElement("li");
-        li.textContent = input.value;
+        li.textContent = toDoItem;
+        output.appendChild(li);
+
         input.value = "";
         input.focus();
-
-        output.appendChild(li);
       }
 
       // TODO: register event onclick / addEventListener untuk button
